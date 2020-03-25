@@ -20,3 +20,11 @@ __3. SETTING UP AD-PLACEMENTS__
   + Go to [our developer page](https://developers.game-on.ai). Register the ad-placements for the game you have registered. The width and height for the ad placements are the dimensions of the image needed on the ad-placement in the Unity3D game.
   + 
   + 
+
+__4. SDK FUNCTIONS__ 
+  + 
+  + 
+
+## CONTACT ##
+* Visit [game-on.ai](https://www.game-on.ai) for more information
+* Email us at info@game-on.ai for any queries
