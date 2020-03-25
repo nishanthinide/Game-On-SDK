@@ -16,7 +16,7 @@ __2. GETTING THE SDK__
   + Go to the [releases page](https://github.com/nishanthinide/game-on-sdk/releases/latest). Download the latest Game-On Unity SDK unitypackage file from the downloads section.  
   + Import the unitypackage.
 
-__3. SETTING UP AD PLACEMENTS__
-  + register the ad-placements for the game you have registered.
+__3. SETTING UP AD-PLACEMENTS__
+  + Go to [our developer page](https://developers.game-on.ai). Register the ad-placements for the game you have registered. The width and height for the ad placements are the dimensions of the image needed on the ad-placement in the Unity3D game.
   + 
   + 
