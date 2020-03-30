@@ -25,14 +25,14 @@ __4. SETTING UP AD-PLACEMENTS__
   + Select the newly added InGameAdObject in the Hierarchy window and in the Inspector window, paste the "Placement Id" into the "Placement Id" scripting variable avaliable on the InGameAdObject Script component.
 
 
-__5. SDK FUNCTIONS__
+__5. ENDING THE GAMEPLAY SESSION__
 + Ending the Session
 
-  Reference the InGameAdsManager in your Game Code:
+  + Reference the InGameAdsManager in your Game Code:
   ~~~~
     private InGameAdsManager inGameAdsManager;
   ~~~~
-  Getting the Instance of the InGameAdsManager Object which you've added to the scene in step 4.
+  + Getting the Instance of the InGameAdsManager Object which you've added to the game in step 2.
   ~~~~
     void Awake()
     {
@@ -44,11 +44,10 @@ __5. SDK FUNCTIONS__
         // Your game code
     }
   ~~~~
-  
+  + when redirecting away from the Gameplay session, use the following line of code to send the end of session signal to the InGameAdsManager :
   ~~~~
     if(inGameAdsManager != null) { inGameAdsManager.SessionEnd(); }    
   ~~~~
-  + 
 
 __6. BUILDING YOUR GAME__
   + Publish your game as you would any normal unity project using the Build Settings window. Make sure to have the Unity Build Platform set to Android as we support Android only. 
