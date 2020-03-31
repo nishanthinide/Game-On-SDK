@@ -49,7 +49,31 @@ __5. ENDING THE GAMEPLAY SESSION__
     if(inGameAdsManager != null) { inGameAdsManager.SessionEnd(); }    
   ~~~~
 
-__6. BUILDING YOUR GAME__
+
+__6. SHOW INTERACTABLE AD__
+  + Reference the InGameAdsManager in your Game Code:
+  ~~~~
+    private InGameAdsManager inGameAdsManager;
+  ~~~~
+  + Getting the Instance of the InGameAdsManager Object which you've added to the game in step 2.
+  ~~~~
+    void Awake()
+    {
+        if(inGameAdsManager == null)
+        {
+            inGameAdsManager = FindObjectOfType<InGameAdsManager>();
+        }
+
+        // Your game code
+    }
+  ~~~~
+  + Showing the interactable ad:
+  ~~~~
+   if (inGameAdsManager != null) { inGameAdsManager.showInteractableAd(); }
+  ~~~~
+  + If interactable ads are avaliable for the ad campaign currently served to your game, then an interstitial ad is loaded.
+
+__7. BUILDING YOUR GAME__
   + Publish your game as you would any normal unity project using the Build Settings window. Make sure to have the Unity Build Platform set to Android as we support Android only. 
 
 ## Contact ##
